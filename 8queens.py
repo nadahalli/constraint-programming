@@ -18,6 +18,6 @@ for column1, column2 in product(columns, columns):
     problem.addConstraint(partial(bishop_func, x = column1, y = column2), (column1, column2))
 
 for solution in problem.getSolutions():
-    print sorted(solution.iteritems())
+    print(sorted(solution.items()))
 
 
